@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # ✅ Fix the typo here
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
@@ -24,7 +24,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # ✅ Fix the spelling
+          pip install -r requirements.txt
 
       - name: Run tests
         run: pytest
